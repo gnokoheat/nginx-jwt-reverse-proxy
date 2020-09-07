@@ -6,9 +6,10 @@ Nginx reverse proxy with JWT authentication
 
 ## Description
 - jwt authentication
+- return `X-Auth-UserId` header from `sub`
 - gzip compression
 - json type error response
-- http method allowed only GET,POST,PUT,DELETE
+- http method allowed only `GET, POST, PUT, DELETE`
 
 ## Usage
 ``` bash
