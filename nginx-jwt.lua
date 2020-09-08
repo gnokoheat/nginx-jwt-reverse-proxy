@@ -37,4 +37,4 @@ if jwt_obj.verified == false then
 end
 
 -- write the X-Auth-UserId header
-ngx.header["X-Auth-UserId"] = jwt_obj.payload.sub
+ngx.req.set_header("X-Auth-UserId", jwt_obj.payload.sub)
